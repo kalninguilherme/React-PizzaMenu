@@ -1,3 +1,3 @@
 # Pizza React Project
 
-![Pizza-Index](./images/Pizza%20Index)
+![Pizza-Index](./images/Pizza%20Index.png)
