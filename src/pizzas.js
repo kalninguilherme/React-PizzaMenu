@@ -1,4 +1,4 @@
-const pizzaData = [
+const pizzas = [
     {
         name: 'Focaccia',
         ingredients: 'Bread with italian olive oil and rosemary',
@@ -43,4 +43,8 @@ const pizzaData = [
     },
 ];
 
-module.exports = pizzaData;
+const a = 'a';
+
+export { a };
+
+export default pizzas;

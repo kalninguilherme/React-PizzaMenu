@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Pizzas from './pizzas';
+import data, { a } from './pizzas';
 import './index.css';
 
 // Always declare components on top level
@@ -23,8 +23,8 @@ function Header() {
 }
 
 function Menu() {
-    const pizzas = Pizzas.pizzaData;
-    const numPizzas = pizzas.length;
+    const pizzas = data;
+    const numPizzas = data.length;
 
     return (
         <main className='menu'>
@@ -48,7 +48,6 @@ function Menu() {
 }
 
 function Pizza({ pizzaObj }) {
-    console.log(pizzaObj);
     // Early Return - Only one happen
     // if (pizzaObj.soldOut) return null;
 
@@ -60,7 +59,6 @@ function Pizza({ pizzaObj }) {
                 <p>{pizzaObj.ingredients}</p>
 
                 <span>{pizzaObj.soldOut ? 'SOLD OUT' : pizzaObj.price}</span>
-
                 {/* {pizzaObj.soldOut ? <span>SOLD OUT</span> : <span>{pizzaObj.Price}</span>} */}
             </div>
         </li>
